@@ -759,3 +759,116 @@ input[type="range"] { width: 100%; accent-color: var(--rose); height: 32px; curs
   text-align: center; font-size: 10px; letter-spacing: 1.8px; text-transform: uppercase;
   color: var(--faint); margin: 26px 0 8px;
 }
+
+/* ============================================================
+   RONDA 2 · piel v1 + clay equilibrado + pantallas nuevas
+   ============================================================ */
+
+/* ---- avatares 3D (reemplazan versiones planas) ---- */
+.ava3d { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center 18%; }
+.mentor-ava.sm { width: 44px; height: 44px; }
+.mentor-opt .mentor-ava { border: 2px solid var(--gold-line); }
+.mentor-opt.sel .mentor-ava { border-color: var(--gold); box-shadow: 0 0 0 3px rgba(201,162,75,.25), var(--sh-2); }
+
+/* ---- clay: el botón se hunde como plastilina ---- */
+.btn.primary, .btn.plum {
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.28), 0 10px 24px rgba(196,112,90,.35);
+}
+.btn.primary:active, .btn.plum:active {
+  transform: translateY(3px) scale(.99);
+  box-shadow: inset 0 3px 8px rgba(64,38,61,.28), 0 4px 10px rgba(196,112,90,.25);
+}
+.pin-key:active { transform: translateY(2px); box-shadow: inset 0 3px 6px rgba(64,38,61,.18); }
+
+/* ---- home-top (v1): panel app + ajustes siempre visible ---- */
+.home-top {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 18px 20px 12px;
+}
+.app-id { display: flex; align-items: center; gap: 12px; min-width: 0; }
+.app-id-txt b { display: block; font-size: var(--t-h2); color: var(--ink); font-family: var(--font-display); }
+.app-id-txt span { display: block; font-size: var(--t-small); color: var(--faint); }
+.icon-btn {
+  width: 44px; height: 44px; border-radius: 50%; flex: none;
+  background: var(--surface); border: none; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  color: var(--ink-soft);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.55), 0 6px 14px -6px rgba(64,38,61,.22);
+  transition: transform .12s var(--ease), box-shadow .12s var(--ease);
+}
+.icon-btn:active { transform: translateY(2px); box-shadow: inset 0 3px 6px rgba(64,38,61,.18); }
+
+/* ---- accesos rápidos ---- */
+.qa-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 6px; }
+.qa-card {
+  font: inherit; display: flex; align-items: center; gap: 10px;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-md); padding: 12px 14px; cursor: pointer;
+  color: var(--ink); font-size: var(--t-small); font-weight: 700; text-align: left;
+  box-shadow: inset 0 2px 0 rgba(255,255,255,.5), var(--sh-1);
+  transition: transform .12s var(--ease);
+}
+.qa-card:active { transform: translateY(2px); }
+.qa-card svg { color: var(--rose); flex: none; }
+
+/* ---- hero app (caras, sin texto horneado) ---- */
+.app-hero {
+  border-radius: var(--r-lg); overflow: hidden; margin: 14px 0 6px;
+  aspect-ratio: 16 / 9; box-shadow: var(--sh-2);
+  border: 1px solid var(--gold-line);
+}
+.app-hero img { width: 100%; height: 100%; object-fit: cover; object-position: center 12%; display: block; }
+
+/* ---- ajustes ---- */
+.set-row { display: flex; align-items: center; gap: 12px; padding: 14px 16px; margin-bottom: 12px; }
+.set-txt { flex: 1; min-width: 0; }
+.set-txt b { display: block; font-size: var(--t-body); color: var(--ink); }
+.set-txt span { display: block; font-size: var(--t-small); color: var(--faint); margin-top: 2px; }
+.set-row .seg { margin: 0; flex: none; }
+.set-row .btn { flex: none; }
+
+/* ---- convertidor ---- */
+.conv-result {
+  display: flex; align-items: baseline; justify-content: space-between;
+  background: var(--bg-soft); border-radius: var(--r-md);
+  padding: 16px; margin-top: 14px;
+}
+.conv-result span { font-size: var(--t-small); color: var(--ink-soft); }
+.conv-result .big { font-size: 30px; color: var(--plum); font-weight: 800; }
+
+/* ---- colaboraciones ---- */
+.colab-row { display: flex; gap: 12px; align-items: flex-start; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.colab-row:last-child { border-bottom: none; }
+.colab-row svg { flex: none; margin-top: 2px; }
+.colab-row b { display: block; font-size: var(--t-body); color: var(--ink); }
+.colab-row span { display: block; font-size: var(--t-small); color: var(--ink-soft); margin-top: 2px; }
+
+/* ---- tour guiado: dedito animado ---- */
+.gest-card {
+  display: flex; gap: 14px; align-items: center;
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: var(--r-lg); padding: 14px 16px; margin-bottom: 12px;
+  box-shadow: var(--sh-1);
+}
+.gest-card b { display: block; font-size: var(--t-h2); color: var(--ink); }
+.gest-card span { display: block; font-size: var(--t-small); color: var(--ink-soft); margin-top: 2px; }
+.gest-svg { width: 64px; height: 64px; flex: none; background: var(--bg-soft); border-radius: 50%; }
+.g-finger { fill: var(--rose); }
+.g-ring { fill: none; stroke: var(--ember); stroke-width: 2.5; opacity: 0; transform-origin: 32px 42px; }
+.g-arrow { fill: none; stroke: var(--ember); stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+.g-ringfill { fill: none; stroke: var(--ember); stroke-width: 3; stroke-linecap: round;
+  stroke-dasharray: 82; stroke-dashoffset: 82; transform: rotate(-90deg); transform-origin: 32px 42px; }
+.g-tap .g-finger { animation: tapFinger 1.6s var(--ease) infinite; transform-origin: 32px 42px; }
+.g-tap .g-ring { animation: tapRing 1.6s var(--ease) infinite; }
+.g-swipe .g-finger { animation: swipeFinger 1.8s var(--ease) infinite; }
+.g-hold .g-finger { animation: holdFinger 2s var(--ease) infinite; transform-origin: 32px 42px; }
+.g-hold .g-ringfill { animation: holdRing 2s linear infinite; }
+@keyframes tapFinger { 0%,100% { transform: translateY(0); } 30% { transform: translateY(7px); } 55% { transform: translateY(0); } }
+@keyframes tapRing { 0% { transform: scale(.55); opacity: .9; } 70%,100% { transform: scale(1.35); opacity: 0; } }
+@keyframes swipeFinger { 0%,100% { transform: translateX(-9px); } 50% { transform: translateX(9px); } }
+@keyframes holdFinger { 0%,100% { transform: scale(1); } 50% { transform: scale(1.08); } }
+@keyframes holdRing { 0% { stroke-dashoffset: 82; } 70%,100% { stroke-dashoffset: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .g-tap .g-finger, .g-tap .g-ring, .g-swipe .g-finger, .g-hold .g-finger, .g-hold .g-ringfill { animation: none; }
+  .g-tap .g-ring { opacity: .5; transform: scale(1); }
+}

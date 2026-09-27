@@ -14,6 +14,7 @@
 <div class="proto-bar">
   <span class="proto-title" data-i18n="chrome.title">Repostería Mentor · Prototipo Hi-Fi</span>
   <select id="screenJump" aria-label="Pantalla">
+    <option value="onb-app" data-i18n="screen.onb-app">Onboarding · Qué es la app</option>
     <option value="onb-welcome" data-i18n="screen.onb-welcome">Onboarding · Elige tu mentor</option>
     <option value="onb-pin" data-i18n="screen.onb-pin">Onboarding · Crear PIN</option>
     <option value="onb-disclaimer" data-i18n="screen.onb-disclaimer">Onboarding · Disclaimer</option>
@@ -25,6 +26,10 @@
     <option value="receta-detalle" data-i18n="screen.receta-detalle">Detalle de receta</option>
     <option value="costeo" data-i18n="screen.costeo">Costeo · Tres cajones</option>
     <option value="precios" data-i18n="screen.precios">Precios · Calculadora</option>
+    <option value="convertidor" data-i18n="screen.convertidor">Convertidor de medidas</option>
+    <option value="colab" data-i18n="screen.colab">Colaboraciones</option>
+    <option value="tour" data-i18n="screen.tour">Tour guiado</option>
+    <option value="ajustes" data-i18n="screen.ajustes">Ajustes</option>
     <option value="mas" data-i18n="screen.mas">Más · Hub</option>
   </select>
   <div class="seg-mini" id="langSeg">
@@ -39,47 +44,6 @@
 
 <!-- ============ SPRITE SVG (íconos + mentores, dibujo propio) ============ -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-<defs>
-  <linearGradient id="gSofi" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#F7DDD2"/><stop offset="1" stop-color="#E8B4A0"/>
-  </linearGradient>
-  <linearGradient id="gMatt" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#D9C6CF"/><stop offset="1" stop-color="#A68E9B"/>
-  </linearGradient>
-  <linearGradient id="gHeroA" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0" stop-color="#E8B4A0"/><stop offset=".5" stop-color="#C4705A"/><stop offset="1" stop-color="#40263D"/>
-  </linearGradient>
-</defs>
-
-<!-- SOFI -->
-<symbol id="ava-sofi" viewBox="0 0 80 80">
-  <circle cx="40" cy="40" r="40" fill="url(#gSofi)"/>
-  <circle cx="40" cy="13" r="7.5" fill="#4A2E2A"/>
-  <path d="M10 80C14 62 27 57 40 57s26 5 30 23Z" fill="#40263D"/>
-  <path d="M33 58l7 8 7-8-3-6h-8Z" fill="#FDF9F4" opacity=".9"/>
-  <rect x="35" y="46" width="10" height="13" rx="4" fill="#E8A87E"/>
-  <ellipse cx="40" cy="37" rx="14.5" ry="16" fill="#F2C9A8"/>
-  <path d="M24 37C24 21 31 15 40 15s16 6 16 22c0 5-2 7-4 5l.5-13c-3.5-4-7.5-5-12.5-5s-9 1-12.5 5l.5 13c-2 2-4 0-4-5Z" fill="#4A2E2A"/>
-  <path d="M31 37q3-3.2 6 0M43 37q3-3.2 6 0" stroke="#3A2E39" stroke-width="2" fill="none" stroke-linecap="round"/>
-  <path d="M34 45.5q6 5 12 0" stroke="#3A2E39" stroke-width="2" fill="none" stroke-linecap="round"/>
-  <circle cx="30" cy="42" r="2.6" fill="#E8A08A" opacity=".55"/>
-  <circle cx="50" cy="42" r="2.6" fill="#E8A08A" opacity=".55"/>
-  <circle cx="55.5" cy="43" r="1.8" fill="#C9A24B"/>
-</symbol>
-
-<!-- MATT -->
-<symbol id="ava-matt" viewBox="0 0 80 80">
-  <circle cx="40" cy="40" r="40" fill="url(#gMatt)"/>
-  <path d="M10 80C14 62 27 57 40 57s26 5 30 23Z" fill="#5B3A4E"/>
-  <path d="M31 57h18l-2 23H33Z" fill="#C9A24B" opacity=".85"/>
-  <rect x="35" y="46" width="10" height="13" rx="4" fill="#D89A6E"/>
-  <ellipse cx="40" cy="38" rx="14.5" ry="15.5" fill="#E8B088"/>
-  <path d="M25 36C25 22 32 16 40 16s15 6 15 20c0 2-.5 3-1.5 2.5C52 30 47 27 40 27s-12 3-13.5 11.5C25.5 39 25 38 25 36Z" fill="#2E2220"/>
-  <path d="M31 38q3-3.2 6 0M43 38q3-3.2 6 0" stroke="#3A2E39" stroke-width="2" fill="none" stroke-linecap="round"/>
-  <path d="M34 46.5q6 4.5 12 0" stroke="#3A2E39" stroke-width="2" fill="none" stroke-linecap="round"/>
-  <path d="M30 33.5l7-1.5M50 33.5l-7-1.5" stroke="#2E2220" stroke-width="2" stroke-linecap="round"/>
-</symbol>
-
 <!-- ÍCONOS (trazo 1.8, propio) -->
 <symbol id="i-home" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11l8-7 8 7"/><path d="M6 9.5V20h12V9.5"/><path d="M10 20v-5h4v5"/></g></symbol>
 <symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4.5A1.5 1.5 0 0 1 6.5 3H19v15H6.7A1.7 1.7 0 0 0 5 19.7Z"/><path d="M5 19.7A1.7 1.7 0 0 1 6.7 18H19v3H6.5A1.5 1.5 0 0 1 5 19.7Z"/><path d="M9 8h7M9 12h5"/></g></symbol>
@@ -104,9 +68,28 @@
 <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6.5h11v10h-11Z"/><path d="M13.5 10h4l3 3.5v3h-7"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></g></symbol>
 <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 4v15.5h16"/><path d="M8.5 15.5v-5M13 15.5V8.5M17.5 15.5v-3"/></g></symbol>
 <symbol id="i-cup" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 10h12v6a5 5 0 0 1-5 5h-2a5 5 0 0 1-5-5Z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 7c0-1.5 1-1.5 1-3M12 7c0-1.5 1-1.5 1-3"/></g></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M10 14a4 4 0 0 0 6 0l3-3a4 4 0 0 0-6-6l-1.5 1.5"/><path d="M14 10a4 4 0 0 0-6 0l-3 3a4 4 0 0 0 6 6l1.5-1.5"/></g></symbol>
 </svg>
 
 <div class="phone" id="phone">
+
+<!-- ================= ONBOARDING · QUÉ ES LA APP ================= -->
+<section class="screen" id="s-onb-app">
+  <div class="wrap" style="padding-top:26px">
+    <div class="kicker" data-i18n="onb.app.kicker">Repostería Mentor</div>
+    <div class="app-hero"><img src="img/ambos.webp" alt="Sofi y Matt"></div>
+    <h1 class="onb-title" data-i18n="onb.app.title">Para que tus postres <em>sean rentables</em></h1>
+    <p class="onb-lede" data-i18n="onb.app.lede">No es una calculadora fría: es tu mentor de repostería, que te guía paso a paso.</p>
+
+    <div class="card" style="padding:6px 16px">
+      <div class="check-item done"><span class="box-c"><svg width="14" height="14"><use href="#i-check"/></svg></span><span data-i18n="onb.app.b1">Costea cada receta con tus números reales</span></div>
+      <div class="check-item done"><span class="box-c"><svg width="14" height="14"><use href="#i-check"/></svg></span><span data-i18n="onb.app.b2">Pon precios con margen, sin adivinar</span></div>
+      <div class="check-item done"><span class="box-c"><svg width="14" height="14"><use href="#i-check"/></svg></span><span data-i18n="onb.app.b3">Aprende el porqué detrás de cada cuenta</span></div>
+    </div>
+
+    <button class="btn primary" onclick="go('onb-welcome')" data-i18n="onb.app.cta">Conocer a mis mentores</button>
+  </div>
+</section>
 
 <!-- ================= ONBOARDING · ELIGE TU MENTOR ================= -->
 <section class="screen" id="s-onb-welcome">
@@ -118,12 +101,12 @@
 
     <div class="mentor-pick">
       <div class="mentor-opt sel" onclick="pickMentor(this)">
-        <span class="mentor-ava"><svg><use href="#ava-sofi"/></svg></span>
+        <span class="mentor-ava"><img class="ava3d" src="img/sofi.webp" alt="Sofi"></span>
         <b data-i18n="onb.w.sofi">Sofi</b>
         <span data-i18n="onb.w.sofi.d">Cálida y directa</span>
       </div>
       <div class="mentor-opt" onclick="pickMentor(this)">
-        <span class="mentor-ava"><svg><use href="#ava-matt"/></svg></span>
+        <span class="mentor-ava"><img class="ava3d" src="img/matt.webp" alt="Matt"></span>
         <b data-i18n="onb.w.matt">Matt</b>
         <span data-i18n="onb.w.matt.d">Paciente y meticuloso</span>
       </div>
@@ -136,7 +119,10 @@
     <p class="hint" data-i18n="onb.w.note">Se guarda en tu teléfono. La próxima vez te dirá “bienvenido de nuevo”.</p>
 
     <button class="btn primary" onclick="go('onb-pin')" data-i18n="onb.w.cta">Empezar</button>
-    <div style="text-align:center"><button class="link-quiet" onclick="go('home')" data-i18n="onb.w.skip">Omitir tour</button></div>
+    <div style="text-align:center;display:flex;gap:18px;justify-content:center">
+      <button class="link-quiet" onclick="go('tour')" data-i18n="onb.w.tour">Ver tour guiado</button>
+      <button class="link-quiet" onclick="go('home')" data-i18n="onb.w.skip">Omitir tour</button>
+    </div>
   </div>
 </section>
 
@@ -251,7 +237,7 @@
   <div class="wrap" style="padding-top:40px; text-align:center">
     <div class="kicker" style="text-align:center" data-i18n="onb.back.kicker">Demo · usuaria recurrente</div>
     <div class="mentor-ava" style="width:120px;height:120px;margin:10px auto 18px;border-width:3px">
-      <svg><use href="#ava-sofi"/></svg>
+      <img class="ava3d" src="img/sofi.webp" alt="Sofi">
     </div>
     <h1 class="onb-title" data-i18n="onb.back.title">Bienvenida de <em>nuevo</em>, Sofi</h1>
     <p class="onb-lede" data-i18n="onb.back.lede">Qué bueno verte otra vez. ¿Qué costeamos hoy?</p>
@@ -261,13 +247,24 @@
 
 <!-- ================= HOME ================= -->
 <section class="screen" id="s-home">
-  <div class="hdr">
-    <h1><span data-i18n="home.date">Septiembre 2026</span><span class="sub" data-i18n="home.hi">Hola, repostera</span></h1>
-    <button class="back-btn" onclick="toastRound2()" aria-label="Respaldo"><svg width="20" height="20" style="color:var(--good)"><use href="#i-shield"/></svg></button>
+  <div class="home-top">
+    <div class="app-id">
+      <span class="mentor-ava sm"><img class="ava3d" src="img/sofi.webp" alt="Sofi"></span>
+      <div class="app-id-txt">
+        <b>Repostería Mentor</b>
+        <span data-i18n="home.top.tag">Tu mentor de repostería rentable</span>
+      </div>
+    </div>
+    <button class="icon-btn" onclick="go('ajustes')" aria-label="Ajustes"><svg width="20" height="20"><use href="#i-gear"/></svg></button>
   </div>
   <div class="wrap">
+    <div class="kicker" data-i18n="home.qa.t">Accesos rápidos</div>
+    <div class="qa-row">
+      <button class="qa-card" onclick="go('precios')"><svg width="22" height="22"><use href="#i-calc"/></svg><span data-i18n="home.qa.calc">Calculadora de precios</span></button>
+      <button class="qa-card" onclick="go('convertidor')"><svg width="22" height="22"><use href="#i-scale"/></svg><span data-i18n="home.qa.conv">Convertidor de medidas</span></button>
+    </div>
     <div class="mentor-card">
-      <span class="mentor-ava"><svg><use href="#ava-sofi"/></svg></span>
+      <span class="mentor-ava"><img class="ava3d" src="img/sofi.webp" alt="Sofi"></span>
       <div>
         <span class="mentor-tag" data-i18n="home.mentor.tag">Tu mentora dice</span>
         <p data-i18n="home.mentor.p">¿Qué costeamos hoy? Te guío <strong>pregunta por pregunta</strong>, sin jerga y con tus números.</p>
@@ -450,7 +447,7 @@
 
     <button class="btn primary" onclick="go('costeo')" data-i18n="det.cta.cost">Costear esta receta</button>
     <div class="btn-row">
-      <button class="btn ghost" onclick="toastRound2()" data-i18n="det.cta.conv">Convertidor</button>
+      <button class="btn ghost" onclick="go('convertidor')" data-i18n="det.cta.conv">Convertidor</button>
       <button class="btn ghost" onclick="toastRound2()" data-i18n="det.cta.card">Tarjeta</button>
     </div>
   </div>
@@ -464,7 +461,7 @@
   </div>
   <div class="wrap">
     <div class="mentor-card">
-      <span class="mentor-ava"><svg><use href="#ava-sofi"/></svg></span>
+      <span class="mentor-ava"><img class="ava3d" src="img/matt-chef.webp" alt="Matt"></span>
       <div>
         <span class="mentor-tag" data-i18n="home.mentor.tag">Tu mentora dice</span>
         <p data-i18n="cos.mentor.p">Costea conmigo, <strong>paso a paso</strong>. Nada de jerga.</p>
@@ -555,7 +552,7 @@
     </div>
 
     <div class="mentor-card anti">
-      <span class="mentor-ava"><svg><use href="#ava-sofi"/></svg></span>
+      <span class="mentor-ava"><img class="ava3d" src="img/sofi.webp" alt="Sofi"></span>
       <div>
         <span class="mentor-tag" data-i18n="home.mentor.tag">Tu mentora dice</span>
         <p data-i18n="pre.anti">La mentora te frena: si intentas poner un precio <strong>por debajo de tu costo</strong>, te aviso. Cobra tu trabajo.</p>
@@ -563,7 +560,7 @@
     </div>
 
     <div class="tip-mentor">
-      <span class="mentor-ava"><svg><use href="#ava-matt"/></svg></span>
+      <span class="mentor-ava"><img class="ava3d" src="img/matt.webp" alt="Matt"></span>
       <div>
         <span class="mentor-tag" data-i18n="home.mentor.tag">Tu mentora dice</span>
         <p style="font-size:13px;color:var(--ink-soft)" data-i18n="pre.tip">¿Quieres más margen? Prueba <strong>frambuesa → fresa</strong>: −$1.80 por torta, sin que el cliente note la diferencia.</p>
@@ -579,14 +576,154 @@
   <div class="hdr"><h1 data-i18n="more.title">Más</h1></div>
   <div class="wrap">
     <div class="hub-grid">
-      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="more.r2">Ronda 2</span><svg><use href="#i-chart"/></svg><b data-i18n="more.negocio.t">Negocio</b><span data-i18n="more.negocio.d">Ventas, gastos y reportes</span></button>
-      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="more.r2">Ronda 2</span><svg><use href="#i-users"/></svg><b data-i18n="more.clientes.t">Clientes</b><span data-i18n="more.clientes.d">Fichas y pedidos</span></button>
-      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="more.r2">Ronda 2</span><svg><use href="#i-box"/></svg><b data-i18n="more.ing.t">Ingredientes</b><span data-i18n="more.ing.d">Catálogo y stock</span></button>
-      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="more.r2">Ronda 2</span><svg><use href="#i-print"/></svg><b data-i18n="more.print.t">Imprimibles</b><span data-i18n="more.print.d">Tarjetas y etiquetas</span></button>
-      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="more.r2">Ronda 2</span><svg><use href="#i-grad"/></svg><b data-i18n="more.learn.t">Aprender</b><span data-i18n="more.learn.d">Ebook y glosario</span></button>
-      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="more.r2">Ronda 2</span><svg><use href="#i-gear"/></svg><b data-i18n="more.set.t">Ajustes</b><span data-i18n="more.set.d">Idioma, tema y respaldo</span></button>
+      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="toast.r2">Próximamente</span><svg><use href="#i-chart"/></svg><b data-i18n="more.negocio.t">Negocio</b><span data-i18n="more.negocio.d">Herramienta · ventas, gastos y reportes</span></button>
+      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="toast.r2">Próximamente</span><svg><use href="#i-users"/></svg><b data-i18n="more.clientes.t">Clientes</b><span data-i18n="more.clientes.d">Herramienta · fichas de clientes y pedidos</span></button>
+      <button class="hub-card" onclick="go('colab')"><svg><use href="#i-link"/></svg><b data-i18n="more.colab.t">Colaboraciones</b><span data-i18n="more.colab.d">Comparte recetas con tu equipo</span></button>
+      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="toast.r2">Próximamente</span><svg><use href="#i-box"/></svg><b data-i18n="more.ing.t">Ingredientes</b><span data-i18n="more.ing.d">Herramienta · catálogo de ingredientes y stock</span></button>
+      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="toast.r2">Próximamente</span><svg><use href="#i-print"/></svg><b data-i18n="more.print.t">Imprimibles</b><span data-i18n="more.print.d">Herramienta · tarjetas y etiquetas para imprimir</span></button>
+      <button class="hub-card" onclick="toastRound2()"><span class="soon" data-i18n="toast.r2">Próximamente</span><svg><use href="#i-grad"/></svg><b data-i18n="more.learn.t">Aprender</b><span data-i18n="more.learn.d">Guía · ebook y glosario para aprender</span></button>
+      <button class="hub-card" onclick="go('ajustes')"><svg><use href="#i-gear"/></svg><b data-i18n="more.set.t">Ajustes</b><span data-i18n="more.set.d">Tus ajustes · idioma, tema y respaldo</span></button>
     </div>
     <div class="made" data-i18n="made">Hecho en NYC · Two Pixels</div>
+  </div>
+</section>
+
+<!-- ================= AJUSTES ================= -->
+<section class="screen" id="s-ajustes">
+  <div class="hdr">
+    <button class="back-btn" onclick="back()"><svg width="18" height="18"><use href="#i-chevL"/></svg></button>
+    <h1 data-i18n="screen.ajustes">Ajustes</h1>
+  </div>
+  <div class="wrap">
+    <div class="kicker" data-i18n="ajustes.kicker">Ajustes</div>
+    <h1 class="onb-title" style="margin-top:0" data-i18n="ajustes.title">Todo a tu <em>manera</em></h1>
+
+    <div class="card set-row">
+      <div class="set-txt"><b data-i18n="ajustes.lang.t">Idioma</b><span data-i18n="ajustes.lang.d">Español o English, desde el primer día</span></div>
+      <div class="seg langSegX">
+        <button data-lang="es" onclick="setLang('es')">ES</button>
+        <button data-lang="en" onclick="setLang('en')">EN</button>
+      </div>
+    </div>
+
+    <div class="card set-row">
+      <div class="set-txt"><b data-i18n="ajustes.theme.t">Apariencia</b><span data-i18n="ajustes.theme.d">Claro de día, oscuro de noche</span></div>
+      <div class="seg themeSegX">
+        <button data-theme="light" onclick="setTheme('light')" data-i18n="ajustes.theme.light">Claro</button>
+        <button data-theme="dark" onclick="setTheme('dark')" data-i18n="ajustes.theme.dark">Oscuro</button>
+      </div>
+    </div>
+
+    <div class="card set-row">
+      <span class="mentor-ava sm"><img class="ava3d" src="img/matt.webp" alt="Matt"></span>
+      <div class="set-txt"><b data-i18n="ajustes.backup.t">Respaldo</b><span data-i18n="ajustes.backup.d">Tu información vive en tu teléfono. Respáldala como oro.</span></div>
+      <button class="btn soft sm" onclick="toast('toast.copied')" data-i18n="ajustes.backup.cta">Hacer respaldo ahora</button>
+    </div>
+
+    <div class="card set-row">
+      <div class="set-txt"><b data-i18n="ajustes.tour.t">Tour guiado</b><span data-i18n="ajustes.tour.d">Repasar los gestos: tocar, deslizar, mantener</span></div>
+      <button class="btn ghost sm" onclick="go('tour')" data-i18n="ajustes.tour.cta">Ver tour</button>
+    </div>
+
+    <div class="made" data-i18n="made">Hecho en NYC · Two Pixels</div>
+  </div>
+</section>
+
+<!-- ================= CONVERTIDOR ================= -->
+<section class="screen" id="s-convertidor">
+  <div class="hdr">
+    <button class="back-btn" onclick="back()"><svg width="18" height="18"><use href="#i-chevL"/></svg></button>
+    <h1 data-i18n="screen.convertidor">Convertidor de medidas</h1>
+  </div>
+  <div class="wrap">
+    <div class="kicker" data-i18n="conv.kicker">Herramienta</div>
+    <h1 class="onb-title" style="margin-top:0" data-i18n="conv.title">Convertidor de <em>medidas</em></h1>
+    <p class="onb-lede" data-i18n="conv.lede">¿La receta viene en tazas y tu balanza en gramos? Resuelto.</p>
+
+    <div class="card">
+      <div class="field"><span class="lbl" data-i18n="conv.ing">Ingrediente</span>
+        <select id="convIng" onchange="convCalc()">
+          <option value="120" data-i18n="conv.i.harina">Harina</option>
+          <option value="200" data-i18n="conv.i.azucar">Azúcar</option>
+          <option value="227" data-i18n="conv.i.mantequilla">Mantequilla</option>
+          <option value="240" data-i18n="conv.i.leche">Leche</option>
+          <option value="100" data-i18n="conv.i.cacao">Cacao</option>
+        </select>
+      </div>
+      <div class="field"><span class="lbl" data-i18n="conv.qty">Cantidad en tazas</span>
+        <input type="number" id="convQty" data-i18n-ph="conv.qty.ph" placeholder="Ej.: 2" value="2" min="0" step="0.25" oninput="convCalc()">
+      </div>
+      <div class="conv-result">
+        <span data-i18n="conv.result">Equivale a</span>
+        <b class="big num" id="convOut">240 g</b>
+      </div>
+      <p class="hint" style="margin:12px 0 0" data-i18n="conv.hint">Valores de referencia para repostería casera.</p>
+    </div>
+
+    <div class="tip-mentor">
+      <span class="mentor-ava"><img class="ava3d" src="img/sofi-chef.webp" alt="Sofi"></span>
+      <div>
+        <span class="mentor-tag" data-i18n="home.mentor.tag">Tu mentora dice</span>
+        <p style="font-size:13px;color:var(--ink-soft)" data-i18n="conv.tip">Pesa siempre que puedas: la taza miente, la balanza no.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= COLABORACIONES ================= -->
+<section class="screen" id="s-colab">
+  <div class="hdr">
+    <button class="back-btn" onclick="back()"><svg width="18" height="18"><use href="#i-chevL"/></svg></button>
+    <h1 data-i18n="screen.colab">Colaboraciones</h1>
+  </div>
+  <div class="wrap">
+    <div class="kicker" data-i18n="colab.kicker">Herramienta</div>
+    <div class="app-hero"><img src="img/ambos.webp" alt="Sofi y Matt"></div>
+    <h1 class="onb-title" data-i18n="colab.title">Colabora <em>sin enredos</em></h1>
+    <p class="onb-lede" data-i18n="colab.lede">Comparte recetas, costos y precios con quien hornea contigo.</p>
+
+    <div class="card" style="padding:6px 16px">
+      <div class="colab-row"><svg width="22" height="22" style="color:var(--rose)"><use href="#i-book"/></svg><div><b data-i18n="colab.r1t">Recetas compartidas</b><span data-i18n="colab.r1d">Tu equipo ve las mismas recetas y costos.</span></div></div>
+      <div class="colab-row"><svg width="22" height="22" style="color:var(--rose)"><use href="#i-users"/></svg><div><b data-i18n="colab.r2t">Roles claros</b><span data-i18n="colab.r2d">Quién puede ver y quién puede editar.</span></div></div>
+      <div class="colab-row"><svg width="22" height="22" style="color:var(--rose)"><use href="#i-shield"/></svg><div><b data-i18n="colab.r3t">Todo queda en tu teléfono</b><span data-i18n="colab.r3d">Tú decides qué sale de tu app.</span></div></div>
+    </div>
+
+    <button class="btn primary" onclick="toastRound2()" data-i18n="colab.cta">Invitar a colaborar</button>
+  </div>
+</section>
+
+<!-- ================= TOUR GUIADO ================= -->
+<section class="screen" id="s-tour">
+  <div class="wrap" style="padding-top:26px">
+    <div class="kicker" data-i18n="tour.kicker">Tour guiado</div>
+    <h1 class="onb-title" data-i18n="tour.title">Muévete con <em>el dedo</em></h1>
+    <p class="onb-lede" data-i18n="tour.lede">Tres gestos y dominas toda la app.</p>
+
+    <div class="gest-card">
+      <svg class="gest-svg g-tap" viewBox="0 0 64 64" aria-hidden="true">
+        <circle class="g-ring" cx="32" cy="42" r="11"/>
+        <path class="g-finger" d="M26 42V20a6 6 0 0 1 12 0v22c0 3.3-2.7 6-6 6s-6-2.7-6-6z"/>
+      </svg>
+      <div><b data-i18n="tour.g1t">Tocar</b><span data-i18n="tour.g1d">Abre recetas, cajones y botones.</span></div>
+    </div>
+
+    <div class="gest-card">
+      <svg class="gest-svg g-swipe" viewBox="0 0 64 64" aria-hidden="true">
+        <path class="g-arrow" d="M10 44h44M36 36l8 8-8 8"/>
+        <path class="g-finger" d="M26 44V22a6 6 0 0 1 12 0v22c0 3.3-2.7 6-6 6s-6-2.7-6-6z"/>
+      </svg>
+      <div><b data-i18n="tour.g2t">Deslizar</b><span data-i18n="tour.g2d">Muévete entre pantallas y listas.</span></div>
+    </div>
+
+    <div class="gest-card">
+      <svg class="gest-svg g-hold" viewBox="0 0 64 64" aria-hidden="true">
+        <circle class="g-ringfill" cx="32" cy="42" r="13"/>
+        <path class="g-finger" d="M26 42V20a6 6 0 0 1 12 0v22c0 3.3-2.7 6-6 6s-6-2.7-6-6z"/>
+      </svg>
+      <div><b data-i18n="tour.g3t">Mantener presionado</b><span data-i18n="tour.g3d">Despliega opciones y menús.</span></div>
+    </div>
+
+    <button class="btn primary" onclick="go('home')" data-i18n="tour.cta">Entrar a la app</button>
   </div>
 </section>
 

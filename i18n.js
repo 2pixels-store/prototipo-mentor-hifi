@@ -229,8 +229,99 @@ es: {
 "tab.mas": "Más",
 
 /* ---- toast ---- */
-"toast.r2": "Disponible en la ronda 2",
+"toast.r2": "Próximamente",
 "toast.copied": "Copiado",
+
+/* ---- ronda 2 · pantallas nuevas ---- */
+"screen.onb-app": "Onboarding · Qué es la app",
+"screen.ajustes": "Ajustes",
+"screen.convertidor": "Convertidor de medidas",
+"screen.colab": "Colaboraciones",
+"screen.tour": "Tour guiado",
+
+/* ---- onboarding · qué es la app ---- */
+"onb.app.kicker": "Repostería Mentor",
+"onb.app.title": "Para que tus postres <em>sean rentables</em>",
+"onb.app.lede": "No es una calculadora fría: es tu mentor de repostería, que te guía paso a paso.",
+"onb.app.b1": "Costea cada receta con tus números reales",
+"onb.app.b2": "Pon precios con margen, sin adivinar",
+"onb.app.b3": "Aprende el porqué detrás de cada cuenta",
+"onb.app.cta": "Conocer a mis mentores",
+
+/* ---- home-top + accesos rápidos ---- */
+"home.top.tag": "Tu mentor de repostería rentable",
+"home.qa.t": "Accesos rápidos",
+"home.qa.calc": "Calculadora de precios",
+"home.qa.conv": "Convertidor de medidas",
+
+/* ---- ajustes ---- */
+"ajustes.kicker": "Ajustes",
+"ajustes.title": "Todo a tu <em>manera</em>",
+"ajustes.lang.t": "Idioma",
+"ajustes.lang.d": "Español o English, desde el primer día",
+"ajustes.theme.t": "Apariencia",
+"ajustes.theme.d": "Claro de día, oscuro de noche",
+"ajustes.theme.light": "Claro",
+"ajustes.theme.dark": "Oscuro",
+"ajustes.backup.t": "Respaldo",
+"ajustes.backup.d": "Tu información vive en tu teléfono. Respáldala como oro.",
+"ajustes.backup.cta": "Hacer respaldo ahora",
+"ajustes.tour.t": "Tour guiado",
+"ajustes.tour.d": "Repasar los gestos: tocar, deslizar, mantener",
+"ajustes.tour.cta": "Ver tour",
+
+/* ---- convertidor ---- */
+"conv.kicker": "Herramienta",
+"conv.title": "Convertidor de <em>medidas</em>",
+"conv.lede": "¿La receta viene en tazas y tu balanza en gramos? Resuelto.",
+"conv.ing": "Ingrediente",
+"conv.qty": "Cantidad en tazas",
+"conv.qty.ph": "Ej.: 2",
+"conv.result": "Equivale a",
+"conv.hint": "Valores de referencia para repostería casera.",
+"conv.tip": "Pesa siempre que puedas: la taza miente, la balanza no.",
+"conv.i.harina": "Harina",
+"conv.i.azucar": "Azúcar",
+"conv.i.mantequilla": "Mantequilla",
+"conv.i.leche": "Leche",
+"conv.i.cacao": "Cacao",
+
+/* ---- colaboraciones ---- */
+"colab.kicker": "Herramienta",
+"colab.title": "Colabora <em>sin enredos</em>",
+"colab.lede": "Comparte recetas, costos y precios con quien hornea contigo.",
+"colab.r1t": "Recetas compartidas",
+"colab.r1d": "Tu equipo ve las mismas recetas y costos.",
+"colab.r2t": "Roles claros",
+"colab.r2d": "Quién puede ver y quién puede editar.",
+"colab.r3t": "Todo queda en tu teléfono",
+"colab.r3d": "Tú decides qué sale de tu app.",
+"colab.cta": "Invitar a colaborar",
+
+/* ---- tour guiado ---- */
+"tour.kicker": "Tour guiado",
+"tour.title": "Muévete con <em>el dedo</em>",
+"tour.lede": "Tres gestos y dominas toda la app.",
+"tour.g1t": "Tocar",
+"tour.g1d": "Abre recetas, cajones y botones.",
+"tour.g2t": "Deslizar",
+"tour.g2d": "Muévete entre pantallas y listas.",
+"tour.g3t": "Mantener presionado",
+"tour.g3d": "Despliega opciones y menús.",
+"tour.cta": "Entrar a la app",
+
+/* ---- hub más · definiciones ---- */
+"more.colab.t": "Colaboraciones",
+"more.colab.d": "Comparte recetas con tu equipo",
+"more.kind.tool": "Herramienta",
+"more.kind.guide": "Guía",
+"more.negocio.d": "Herramienta · ventas, gastos y reportes",
+"more.clientes.d": "Herramienta · fichas de clientes y pedidos",
+"more.ing.d": "Herramienta · catálogo de ingredientes y stock",
+"more.print.d": "Herramienta · tarjetas y etiquetas para imprimir",
+"more.learn.d": "Guía · ebook y glosario para aprender",
+"more.set.d": "Tus ajustes · idioma, tema y respaldo",
+"onb.w.tour": "Ver tour guiado",
 
 "made": "Hecho en NYC · Two Pixels"
 },
@@ -460,8 +551,99 @@ en: {
 "tab.mas": "More",
 
 /* ---- toast ---- */
-"toast.r2": "Available in round 2",
+"toast.r2": "Coming soon",
 "toast.copied": "Copied",
+
+/* ---- round 2 · new screens ---- */
+"screen.onb-app": "Onboarding · What the app is",
+"screen.ajustes": "Settings",
+"screen.convertidor": "Unit converter",
+"screen.colab": "Collaborations",
+"screen.tour": "Guided tour",
+
+/* ---- onboarding · what the app is ---- */
+"onb.app.kicker": "Repostería Mentor",
+"onb.app.title": "So your desserts <em>are profitable</em>",
+"onb.app.lede": "Not a cold calculator: your baking mentor, guiding you step by step.",
+"onb.app.b1": "Cost every recipe with your real numbers",
+"onb.app.b2": "Price with margin, no guessing",
+"onb.app.b3": "Learn the why behind every number",
+"onb.app.cta": "Meet my mentors",
+
+/* ---- home-top + quick access ---- */
+"home.top.tag": "Your profitable-baking mentor",
+"home.qa.t": "Quick access",
+"home.qa.calc": "Price calculator",
+"home.qa.conv": "Unit converter",
+
+/* ---- settings ---- */
+"ajustes.kicker": "Settings",
+"ajustes.title": "Everything <em>your way</em>",
+"ajustes.lang.t": "Language",
+"ajustes.lang.d": "Español or English, from day one",
+"ajustes.theme.t": "Appearance",
+"ajustes.theme.d": "Light by day, dark by night",
+"ajustes.theme.light": "Light",
+"ajustes.theme.dark": "Dark",
+"ajustes.backup.t": "Backup",
+"ajustes.backup.d": "Your data lives on your phone. Back it up like gold.",
+"ajustes.backup.cta": "Back up now",
+"ajustes.tour.t": "Guided tour",
+"ajustes.tour.d": "Review the gestures: tap, swipe, hold",
+"ajustes.tour.cta": "View tour",
+
+/* ---- converter ---- */
+"conv.kicker": "Tool",
+"conv.title": "Unit <em>converter</em>",
+"conv.lede": "Recipe calls for cups and your scale reads grams? Solved.",
+"conv.ing": "Ingredient",
+"conv.qty": "Amount in cups",
+"conv.qty.ph": "E.g.: 2",
+"conv.result": "Equals",
+"conv.hint": "Reference values for home baking.",
+"conv.tip": "Weigh whenever you can: the cup lies, the scale doesn't.",
+"conv.i.harina": "Flour",
+"conv.i.azucar": "Sugar",
+"conv.i.mantequilla": "Butter",
+"conv.i.leche": "Milk",
+"conv.i.cacao": "Cocoa",
+
+/* ---- collaborations ---- */
+"colab.kicker": "Tool",
+"colab.title": "Collaborate <em>hassle-free</em>",
+"colab.lede": "Share recipes, costs and prices with whoever bakes with you.",
+"colab.r1t": "Shared recipes",
+"colab.r1d": "Your team sees the same recipes and costs.",
+"colab.r2t": "Clear roles",
+"colab.r2d": "Who can view and who can edit.",
+"colab.r3t": "Everything stays on your phone",
+"colab.r3d": "You decide what leaves your app.",
+"colab.cta": "Invite a collaborator",
+
+/* ---- guided tour ---- */
+"tour.kicker": "Guided tour",
+"tour.title": "Move with <em>your finger</em>",
+"tour.lede": "Three gestures and you own the whole app.",
+"tour.g1t": "Tap",
+"tour.g1d": "Opens recipes, drawers and buttons.",
+"tour.g2t": "Swipe",
+"tour.g2d": "Move between screens and lists.",
+"tour.g3t": "Press and hold",
+"tour.g3d": "Reveals options and menus.",
+"tour.cta": "Enter the app",
+
+/* ---- more hub · definitions ---- */
+"more.colab.t": "Collaborations",
+"more.colab.d": "Share recipes with your team",
+"more.kind.tool": "Tool",
+"more.kind.guide": "Guide",
+"more.negocio.d": "Tool · sales, expenses and reports",
+"more.clientes.d": "Tool · client profiles and orders",
+"more.ing.d": "Tool · ingredient catalog and stock",
+"more.print.d": "Tool · cards and labels to print",
+"more.learn.d": "Guide · ebook and glossary to learn",
+"more.set.d": "Your settings · language, theme and backup",
+"onb.w.tour": "View guided tour",
 
 "made": "Crafted in NYC · Two Pixels"
 }
@@ -476,6 +658,6 @@ function applyLang() {
   document.querySelectorAll('[data-i18n]').forEach(el => { el.innerHTML = t(el.dataset.i18n); });
   document.querySelectorAll('[data-i18n-ph]').forEach(el => { el.placeholder = t(el.dataset.i18nPh); });
   document.documentElement.lang = LANG;
-  document.querySelectorAll('#langSeg button').forEach(b =>
+  document.querySelectorAll('#langSeg button, .langSegX button').forEach(b =>
     b.classList.toggle('on', b.dataset.lang === LANG));
 }

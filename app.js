@@ -62,8 +62,16 @@ function setLang(l) {
 /* ---------- tema ---------- */
 function setTheme(mode) {
   document.documentElement.dataset.theme = (mode === 'dark') ? 'dark' : 'light';
-  document.querySelectorAll('#themeSeg button').forEach(b =>
+  document.querySelectorAll('#themeSeg button, .themeSegX button').forEach(b =>
     b.classList.toggle('on', b.dataset.theme === mode));
+}
+
+/* ---------- convertidor (demo funcional) ---------- */
+const CONV_DEFAULT_QTY = 2;
+function convCalc() {
+  const per = parseFloat(document.getElementById('convIng').value) || 0;
+  const qty = parseFloat(document.getElementById('convQty').value) || 0;
+  document.getElementById('convOut').textContent = Math.round(per * qty) + ' g';
 }
 
 /* ---------- PIN pad (visual) ---------- */
@@ -109,5 +117,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setTheme('light');
   const sel = document.getElementById('screenJump');
   if (sel) sel.addEventListener('change', e => { stack.length = 0; show(e.target.value); });
-  show('onb-welcome');
+  convCalc();
+  show('onb-app');
 });
